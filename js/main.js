@@ -90,18 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ===== FORM SUBMISSION =====
   const form = document.getElementById('contact-form');
+  
   if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
       const btn = form.querySelector('.form-submit');
-      const originalContent = btn.innerHTML;
-      btn.innerHTML = '✓ Message envoyé !';
-      btn.style.background = 'linear-gradient(90deg, #1a8a4a, #22c55e)';
-      setTimeout(() => {
-        btn.innerHTML = originalContent;
-        btn.style.background = '';
-        form.reset();
-      }, 3000);
+    
+      form.addEventListener('submit', () => {
+      btn.disabled = true;
+      btn.innerHTML = 'Envoi en cours...';
     });
   }
 
