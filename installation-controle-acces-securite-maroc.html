@@ -72,180 +72,335 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    .service-page {
+    /* En-tête indépendant du CSS général */
+    .ca-header {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: relative;
+      z-index: 100;
+    }
+
+    .ca-header-inner {
+      max-width: 1200px;
+      min-height: 85px;
+      margin: auto;
+      padding: 12px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .ca-logo {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+      text-decoration: none;
+    }
+
+    .ca-logo img {
+      display: block;
+      width: 175px;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .ca-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .ca-nav a {
+      color: #173b60;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .ca-nav a:hover {
+      color: #ed8728;
+    }
+
+    /* Mise en page générale */
+    .ca-page {
       color: #263445;
       line-height: 1.7;
     }
 
-    .service-hero {
+    .ca-page * {
+      box-sizing: border-box;
+    }
+
+    .ca-container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .ca-hero {
       padding: 85px 20px;
       text-align: center;
       background: linear-gradient(135deg, #082d55, #075a91);
-      color: #fff;
+      color: #ffffff;
     }
 
-    .service-hero .container {
+    .ca-hero-content {
       max-width: 950px;
       margin: auto;
     }
 
-    .service-hero h1 {
-      font-size: clamp(30px, 5vw, 46px);
-      margin: 18px 0;
-      line-height: 1.2;
+    .ca-badge {
+      display: inline-block;
+      padding: 7px 16px;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.13);
+      border: 1px solid rgba(255,255,255,0.3);
+      font-size: 14px;
+      color: #ffffff;
     }
 
-    .service-hero p {
+    .ca-hero h1 {
+      color: #ffffff;
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.2;
+      margin: 20px 0;
+    }
+
+    .ca-hero p {
       max-width: 780px;
       margin: 0 auto 28px;
       font-size: 17px;
       color: #e6eff8;
     }
 
-    .service-badge {
+    .ca-button {
       display: inline-block;
-      padding: 7px 16px;
-      border-radius: 30px;
-      background: rgba(255,255,255,.13);
-      border: 1px solid rgba(255,255,255,.3);
-      font-size: 14px;
+      padding: 13px 26px;
+      background: #f28c28;
+      color: #ffffff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.2s ease;
     }
 
-    .service-section {
-      padding: 65px 20px;
+    .ca-button:hover {
+      background: #dc7413;
+      color: #ffffff;
     }
 
-    .service-section:nth-child(even) {
+    .ca-section {
+      padding: 65px 0;
+    }
+
+    .ca-section:nth-of-type(even) {
       background: #f5f8fb;
     }
 
-    .service-container {
-      max-width: 1120px;
-      margin: auto;
-    }
-
-    .service-section h2 {
+    .ca-section h2 {
       color: #123d67;
       font-size: 30px;
-      margin-bottom: 18px;
       line-height: 1.3;
+      margin: 0 0 20px;
     }
 
-    .service-section h3 {
+    .ca-section h3 {
       color: #123d67;
-      margin-bottom: 10px;
+      font-size: 19px;
+      margin: 0 0 12px;
     }
 
-    .service-intro {
-      max-width: 850px;
-      margin-bottom: 30px;
+    .ca-section p {
+      color: #536273;
+      margin: 0 0 16px;
     }
 
-    .service-grid {
+    .ca-intro {
+      max-width: 880px;
+    }
+
+    /* Cartes de prestations */
+    .ca-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
       margin-top: 30px;
     }
 
-    .service-box {
-      background: #fff;
-      padding: 25px;
+    .ca-card {
+      background: #ffffff;
+      padding: 26px;
       border-radius: 12px;
       border: 1px solid #e5ebf1;
-      box-shadow: 0 5px 18px rgba(0,0,0,.045);
+      box-shadow: 0 5px 18px rgba(0,0,0,0.045);
     }
 
-    .service-box .service-icon {
+    .ca-card-icon {
       font-size: 32px;
       margin-bottom: 12px;
     }
 
-    .service-box p {
-      margin-bottom: 0;
-      color: #536273;
+    .ca-card p {
+      margin: 0;
     }
 
-    .service-list {
-      padding-left: 22px;
+    /* Liste des équipements : styles isolés */
+    .ca-equipment-list {
+      display: block !important;
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 25px 0 0 !important;
     }
 
-    .service-list li {
-      margin-bottom: 10px;
+    .ca-equipment-list li {
+      display: block !important;
+      position: relative;
+      color: #263445 !important;
+      font-size: 16px !important;
+      line-height: 1.6 !important;
+      font-weight: 400 !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      padding: 10px 10px 10px 36px !important;
+      margin: 0 0 10px !important;
+      background: #ffffff;
+      border: 1px solid #e5ebf1;
+      border-radius: 7px;
     }
 
-    .service-cta {
-      padding: 65px 20px;
-      text-align: center;
-      color: white;
-      background: #0b345d;
-    }
-
-    .service-cta h2 {
-      color: white;
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
-    .service-cta p {
-      max-width: 720px;
-      margin: 0 auto 25px;
-      color: #e3edf6;
-    }
-
-    .service-cta a {
-      display: inline-block;
-      background: #f28c28;
-      color: #fff;
-      padding: 13px 25px;
-      border-radius: 6px;
-      text-decoration: none;
+    .ca-equipment-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 13px;
+      top: 10px;
+      color: #e98525;
       font-weight: 700;
     }
 
-    .service-cta a:hover {
-      background: #dc7413;
-    }
-
-    .service-faq details {
-      background: #fff;
+    /* FAQ */
+    .ca-faq details {
+      background: #ffffff;
       border: 1px solid #e3eaf0;
       border-radius: 8px;
       padding: 17px 20px;
       margin-bottom: 12px;
     }
 
-    .service-faq summary {
+    .ca-faq summary {
       cursor: pointer;
       font-weight: 700;
       color: #123d67;
     }
 
-    .service-faq details p {
+    .ca-faq details p {
       margin: 12px 0 0;
-      color: #536273;
     }
 
-    .service-links a {
+    /* Liens vers les autres pages */
+    .ca-links {
+      padding-left: 22px;
+      margin-top: 20px;
+    }
+
+    .ca-links li {
+      margin-bottom: 12px;
+    }
+
+    .ca-links a {
       color: #075a91;
       font-weight: 600;
       text-decoration: none;
     }
 
-    .service-links a:hover {
+    .ca-links a:hover {
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
-      .service-hero {
+    /* Appel à l'action */
+    .ca-cta {
+      padding: 65px 20px;
+      text-align: center;
+      color: #ffffff;
+      background: #0b345d;
+    }
+
+    .ca-cta h2 {
+      color: #ffffff;
+      font-size: 30px;
+      margin: 0 0 15px;
+    }
+
+    .ca-cta p {
+      max-width: 720px;
+      margin: 0 auto 25px;
+      color: #e3edf6;
+    }
+
+    /* Pied de page */
+    .ca-footer {
+      padding: 25px 20px;
+      text-align: center;
+      background: #071f38;
+      color: #ffffff;
+    }
+
+    .ca-footer p {
+      margin: 0 0 8px;
+      color: #ffffff;
+    }
+
+    .ca-footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /* Adaptation mobile */
+    @media (max-width: 700px) {
+      .ca-header-inner {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px;
+      }
+
+      .ca-logo img {
+        width: 155px;
+      }
+
+      .ca-nav {
+        justify-content: center;
+        gap: 12px 20px;
+      }
+
+      .ca-nav a {
+        font-size: 14px;
+      }
+
+      .ca-hero {
         padding: 60px 18px;
       }
 
-      .service-section {
-        padding: 45px 18px;
+      .ca-section {
+        padding: 45px 0;
       }
 
-      .service-section h2 {
+      .ca-section h2 {
+        font-size: 25px;
+      }
+
+      .ca-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ca-cta h2 {
         font-size: 25px;
       }
     }
@@ -254,28 +409,30 @@
 
 <body>
 
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <a href="index.html" class="logo">
-          <img src="images/logo.png" alt="BEST FIBRE TECHNOLOGY BFT">
-        </a>
+  <header class="ca-header">
+    <div class="ca-header-inner">
 
-        <ul class="nav-menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html#services">Nos services</a></li>
-          <li><a href="index.html#about">À propos</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+      <a href="index.html" class="ca-logo">
+        <img src="images/logo.png" alt="BEST FIBRE TECHNOLOGY - BFT">
+      </a>
+
+      <nav class="ca-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#services">Nos services</a>
+        <a href="index.html#about">À propos</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+    </div>
   </header>
 
-  <main class="service-page">
+  <main class="ca-page">
 
-    <section class="service-hero">
-      <div class="container">
-        <span class="service-badge">BEST FIBRE TECHNOLOGY – BFT</span>
+    <!-- Présentation principale -->
+    <section class="ca-hero">
+      <div class="ca-hero-content">
+
+        <span class="ca-badge">BEST FIBRE TECHNOLOGY – BFT</span>
 
         <h1>Installation de Systèmes de Contrôle d'Accès au Maroc</h1>
 
@@ -286,17 +443,20 @@
           et visiophones.
         </p>
 
-        <a href="index.html#contact" class="btn btn-primary">
+        <a href="index.html#contact" class="ca-button">
           Demander un devis
         </a>
+
       </div>
     </section>
 
-    <section class="service-section">
-      <div class="service-container">
+    <!-- Introduction -->
+    <section class="ca-section">
+      <div class="ca-container">
+
         <h2>Des solutions de contrôle d'accès adaptées à vos bâtiments</h2>
 
-        <div class="service-intro">
+        <div class="ca-intro">
           <p>
             Le contrôle d'accès permet de gérer et de sécuriser les entrées
             et les sorties d'un bâtiment. Il contribue à limiter les accès
@@ -311,54 +471,56 @@
           </p>
         </div>
 
-        <div class="service-grid">
+        <div class="ca-grid">
 
-          <div class="service-box">
-            <div class="service-icon">💳</div>
+          <article class="ca-card">
+            <div class="ca-card-icon">💳</div>
             <h3>Contrôle d'accès par badges et cartes</h3>
             <p>
               Installation de lecteurs et de systèmes d'accès utilisant
               des badges ou des cartes pour gérer les autorisations
               d'entrée dans les locaux.
             </p>
-          </div>
+          </article>
 
-          <div class="service-box">
-            <div class="service-icon">🔐</div>
+          <article class="ca-card">
+            <div class="ca-card-icon">🔐</div>
             <h3>Contrôle d'accès biométrique</h3>
             <p>
               Installation de dispositifs biométriques, notamment
               les lecteurs d'empreintes digitales, pour contrôler
               l'accès aux zones sécurisées.
             </p>
-          </div>
+          </article>
 
-          <div class="service-box">
-            <div class="service-icon">📞</div>
+          <article class="ca-card">
+            <div class="ca-card-icon">📞</div>
             <h3>Installation d'interphones</h3>
             <p>
               Mise en place de systèmes d'interphonie permettant
               la communication entre les visiteurs et les occupants
               d'un bâtiment.
             </p>
-          </div>
+          </article>
 
-          <div class="service-box">
-            <div class="service-icon">📹</div>
+          <article class="ca-card">
+            <div class="ca-card-icon">📹</div>
             <h3>Installation de visiophones</h3>
             <p>
               Installation de solutions de visiophonie permettant
               d'identifier visuellement les visiteurs avant
               de leur autoriser l'accès.
             </p>
-          </div>
+          </article>
 
         </div>
       </div>
     </section>
 
-    <section class="service-section">
-      <div class="service-container">
+    <!-- Installation et raccordement -->
+    <section class="ca-section">
+      <div class="ca-container">
+
         <h2>Installation, câblage et configuration des équipements</h2>
 
         <p>
@@ -367,56 +529,61 @@
           des équipements jusqu'à leur raccordement et leur configuration.
         </p>
 
-        <ul class="service-list">
+        <ul class="ca-equipment-list">
           <li>Installation des lecteurs de badges et de cartes.</li>
           <li>Installation des dispositifs biométriques.</li>
           <li>Installation des interphones et visiophones.</li>
           <li>Câblage et raccordement des équipements.</li>
           <li>Configuration et vérification du fonctionnement des systèmes.</li>
         </ul>
+
       </div>
     </section>
 
-    <section class="service-section">
-      <div class="service-container">
+    <!-- Types de clients -->
+    <section class="ca-section">
+      <div class="ca-container">
+
         <h2>Nos solutions pour les professionnels et les résidences</h2>
 
-        <div class="service-grid">
+        <div class="ca-grid">
 
-          <div class="service-box">
-            <div class="service-icon">🏢</div>
+          <article class="ca-card">
+            <div class="ca-card-icon">🏢</div>
             <h3>Entreprises et bureaux</h3>
             <p>
               Gestion des accès aux bureaux, locaux techniques,
               espaces professionnels et zones réservées.
             </p>
-          </div>
+          </article>
 
-          <div class="service-box">
-            <div class="service-icon">🏘️</div>
+          <article class="ca-card">
+            <div class="ca-card-icon">🏘️</div>
             <h3>Résidences et immeubles</h3>
             <p>
               Installation de systèmes d'accès pour les entrées
               principales, les halls et les espaces communs.
             </p>
-          </div>
+          </article>
 
-          <div class="service-box">
-            <div class="service-icon">🏬</div>
+          <article class="ca-card">
+            <div class="ca-card-icon">🏬</div>
             <h3>Commerces et locaux professionnels</h3>
             <p>
               Solutions de contrôle d'accès adaptées aux commerces,
               établissements et locaux nécessitant une gestion
               des entrées.
             </p>
-          </div>
+          </article>
 
         </div>
       </div>
     </section>
 
-    <section class="service-section">
-      <div class="service-container">
+    <!-- Zone d'intervention -->
+    <section class="ca-section">
+      <div class="ca-container">
+
         <h2>Une intervention dans tout le Maroc</h2>
 
         <p>
@@ -430,11 +597,14 @@
           Chaque installation est étudiée selon la configuration du site,
           les équipements à mettre en place et les besoins du client.
         </p>
+
       </div>
     </section>
 
-    <section class="service-section service-faq">
-      <div class="service-container">
+    <!-- Questions fréquentes -->
+    <section class="ca-section ca-faq">
+      <div class="ca-container">
+
         <h2>Questions fréquentes sur le contrôle d'accès</h2>
 
         <details>
@@ -475,37 +645,45 @@
       </div>
     </section>
 
-    <section class="service-section">
-      <div class="service-container service-links">
+    <!-- Liens internes -->
+    <section class="ca-section">
+      <div class="ca-container">
+
         <h2>Découvrez également les autres services de BFT</h2>
 
-        <ul class="service-list">
+        <ul class="ca-links">
           <li>
             <a href="fibre-optique-ftth-ftto-maroc.html">
               Installation de fibre optique FTTH / FTTO
             </a>
           </li>
+
           <li>
             <a href="installation-camera-videosurveillance-maroc.html">
               Installation de caméras de vidéosurveillance
             </a>
           </li>
+
           <li>
             <a href="installation-systemes-securite-incendie-maroc.html">
               Installation de systèmes de sécurité incendie
             </a>
           </li>
+
           <li>
             <a href="installation-cablage-electrique-industriel-maroc.html">
               Installation et câblage électrique
             </a>
           </li>
         </ul>
+
       </div>
     </section>
 
-    <section class="service-cta">
-      <div class="service-container">
+    <!-- Contact -->
+    <section class="ca-cta">
+      <div class="ca-container">
+
         <h2>Vous avez un projet de contrôle d'accès ?</h2>
 
         <p>
@@ -513,25 +691,27 @@
           de contrôle d'accès, de biométrie, d'interphonie ou de visiophonie.
         </p>
 
-        <a href="index.html#contact">Demander un devis</a>
+        <a href="index.html#contact" class="ca-button">
+          Demander un devis
+        </a>
+
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>
-        © <span id="year"></span> BEST FIBRE TECHNOLOGY (BFT).
-        Tous droits réservés.
-      </p>
-      <a href="index.html">Retour à l'accueil</a>
-    </div>
+  <footer class="ca-footer">
+    <p>
+      © <span id="ca-year"></span> BEST FIBRE TECHNOLOGY (BFT).
+      Tous droits réservés.
+    </p>
+    <a href="index.html">Retour à l'accueil</a>
   </footer>
 
   <script src="js/main.js"></script>
+
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("ca-year").textContent = new Date().getFullYear();
   </script>
 
 </body>
