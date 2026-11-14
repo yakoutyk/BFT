@@ -1,6 +1,40 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Page d'accueil -->
   <url>
-    <loc>https://bftmaroc.com/</loc>
+    <loc>https://www.bftmaroc.com/</loc>
   </url>
+
+  <!-- Fibre optique FTTH / FTTO -->
+  <url>
+    <loc>https://www.bftmaroc.com/fibre-optique-ftth-ftto-maroc.html</loc>
+  </url>
+
+  <!-- Vidéosurveillance IP -->
+  <url>
+    <loc>https://www.bftmaroc.com/installation-camera-videosurveillance-maroc.html</loc>
+  </url>
+
+  <!-- Sécurité incendie -->
+  <url>
+    <loc>https://www.bftmaroc.com/installation-systemes-securite-incendie-maroc.html</loc>
+  </url>
+
+  <!-- Installation et câblage électrique -->
+  <url>
+    <loc>https://www.bftmaroc.com/installation-cablage-electrique-industriel-maroc.html</loc>
+  </url>
+
+  <!-- Contrôle d'accès -->
+  <url>
+    <loc>https://www.bftmaroc.com/installation-controle-acces-securite-maroc.html</loc>
+  </url>
+
+  <!-- Alarme anti-intrusion -->
+  <url>
+    <loc>https://www.bftmaroc.com/installation-alarme-anti-intrusion-maroc.html</loc>
+  </url>
+
 </urlset>
