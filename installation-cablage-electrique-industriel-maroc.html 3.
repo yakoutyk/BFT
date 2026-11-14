@@ -1,0 +1,613 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Installation Électrique et Câblage Industriel au Maroc | BFT</title>
+
+  <meta name="description" content="BFT réalise l'installation électrique et le câblage industriel et tertiaire au Maroc : tableaux électriques, prises, éclairage, CFO, CFA, raccordement et maintenance.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.bftmaroc.com/installation-cablage-electrique-industriel-maroc.html">
+
+  <meta property="og:title" content="Installation Électrique et Câblage Industriel au Maroc | BFT">
+  <meta property="og:description" content="Solutions d'installation électrique, de câblage CFO et CFA, de raccordement et de maintenance pour les bâtiments professionnels au Maroc.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.bftmaroc.com/installation-cablage-electrique-industriel-maroc.html">
+
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.bftmaroc.com/installation-cablage-electrique-industriel-maroc.html#webpage",
+        "url": "https://www.bftmaroc.com/installation-cablage-electrique-industriel-maroc.html",
+        "name": "Installation Électrique et Câblage Industriel au Maroc | BFT",
+        "description": "Services d'installation électrique et de câblage industriel et tertiaire au Maroc.",
+        "inLanguage": "fr-MA",
+        "isPartOf": {
+          "@id": "https://www.bftmaroc.com/#website"
+        },
+        "about": {
+          "@id": "https://www.bftmaroc.com/#organization"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.bftmaroc.com/installation-cablage-electrique-industriel-maroc.html#service",
+        "name": "Installation électrique et câblage industriel et tertiaire",
+        "serviceType": [
+          "Installation électrique",
+          "Câblage électrique CFO et CFA",
+          "Installation de tableaux électriques",
+          "Installation d'éclairage et de prises électriques",
+          "Raccordement et maintenance électrique"
+        ],
+        "provider": {
+          "@id": "https://www.bftmaroc.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Maroc"
+        },
+        "url": "https://www.bftmaroc.com/installation-cablage-electrique-industriel-maroc.html"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://www.bftmaroc.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Installation électrique et câblage industriel",
+            "item": "https://www.bftmaroc.com/installation-cablage-electrique-industriel-maroc.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bft-blue: #063b70;
+      --bft-orange: #f58220;
+      --bft-light: #f4f7fb;
+      --bft-dark: #172b3d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--bft-dark);
+      line-height: 1.7;
+      background: #fff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .page-header {
+      background: #fff;
+      border-bottom: 1px solid #e8edf2;
+      padding: 14px 6%;
+    }
+
+    .header-inner {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo img {
+      max-width: 155px;
+      height: auto;
+      display: block;
+    }
+
+    .header-link {
+      color: var(--bft-blue);
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 90px 6%;
+      background: linear-gradient(120deg, #063b70, #0b568f);
+      color: #fff;
+    }
+
+    .hero-inner {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .hero-label {
+      display: inline-block;
+      padding: 7px 15px;
+      background: rgba(255,255,255,.13);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
+      margin: 0 0 22px;
+    }
+
+    .hero p {
+      max-width: 780px;
+      font-size: 18px;
+      color: #e8f1fa;
+      margin-bottom: 30px;
+    }
+
+    .primary-btn {
+      display: inline-block;
+      background: var(--bft-orange);
+      color: #fff;
+      padding: 13px 24px;
+      border-radius: 5px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .primary-btn:hover {
+      background: #df6d0d;
+      transform: translateY(-2px);
+    }
+
+    .section {
+      padding: 70px 6%;
+    }
+
+    .section-light {
+      background: var(--bft-light);
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      color: var(--bft-blue);
+      font-size: clamp(25px, 4vw, 34px);
+      line-height: 1.3;
+      margin: 0 0 18px;
+    }
+
+    .section-intro {
+      max-width: 850px;
+      margin: 0 0 35px;
+      color: #536477;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .service-box {
+      background: #fff;
+      padding: 27px;
+      border-radius: 9px;
+      border: 1px solid #e7edf3;
+      box-shadow: 0 5px 18px rgba(15, 45, 75, .05);
+    }
+
+    .service-box .icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .service-box h3 {
+      color: var(--bft-blue);
+      font-size: 19px;
+      margin: 0 0 10px;
+    }
+
+    .service-box p {
+      color: #596b7d;
+      margin: 0;
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 25px 0 0;
+    }
+
+    .check-list li {
+      position: relative;
+      padding: 9px 0 9px 30px;
+      border-bottom: 1px solid #e8edf2;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--bft-orange);
+      font-weight: bold;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      align-items: start;
+    }
+
+    .info-panel {
+      background: #fff;
+      border-left: 4px solid var(--bft-orange);
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 0 5px 18px rgba(15, 45, 75, .05);
+    }
+
+    .faq-list details {
+      background: #fff;
+      padding: 19px 22px;
+      margin-bottom: 12px;
+      border: 1px solid #e4eaf0;
+      border-radius: 6px;
+    }
+
+    .faq-list summary {
+      color: var(--bft-blue);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .faq-list details p {
+      color: #586b7c;
+      margin-bottom: 0;
+    }
+
+    .cta {
+      background: var(--bft-blue);
+      color: #fff;
+      text-align: center;
+      padding: 65px 6%;
+    }
+
+    .cta h2 {
+      font-size: clamp(25px, 4vw, 34px);
+      margin: 0 0 15px;
+    }
+
+    .cta p {
+      color: #e1edf8;
+      margin-bottom: 25px;
+    }
+
+    .related-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .related-links a {
+      color: var(--bft-blue);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .page-footer {
+      background: #092b4c;
+      color: #dce8f3;
+      padding: 25px 6%;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .page-footer a {
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 65px 6%;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 50px 6%;
+      }
+
+      .header-inner {
+        align-items: center;
+      }
+
+      .logo img {
+        max-width: 125px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="BFT - Accueil">
+        <img src="images/logo.png" alt="BEST FIBRE TECHNOLOGY BFT">
+      </a>
+
+      <a href="index.html#services" class="header-link">Nos services</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="hero-label">BEST FIBRE TECHNOLOGY (BFT)</span>
+
+        <h1>Installation Électrique et Câblage Industriel et Tertiaire au Maroc</h1>
+
+        <p>
+          BFT accompagne les entreprises, les bâtiments professionnels et les chantiers
+          dans leurs projets d'installation électrique, de câblage, de raccordement
+          et d'équipement électrique.
+        </p>
+
+        <a href="index.html#contact" class="primary-btn">Demander un devis</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Nos services d'installation électrique</h2>
+
+        <p class="section-intro">
+          Nous réalisons des travaux d'installation et de câblage électrique adaptés
+          aux besoins des bâtiments industriels, tertiaires et professionnels.
+          Nos interventions couvrent les différents équipements nécessaires
+          au fonctionnement des installations électriques.
+        </p>
+
+        <div class="service-grid">
+
+          <article class="service-box">
+            <div class="icon">⚡</div>
+            <h3>Installation électrique des bâtiments</h3>
+            <p>
+              Installation et raccordement des équipements électriques dans les
+              locaux professionnels, les bâtiments et les espaces de travail.
+            </p>
+          </article>
+
+          <article class="service-box">
+            <div class="icon">💡</div>
+            <h3>Installation de prises et d'éclairage</h3>
+            <p>
+              Mise en place des prises électriques, points lumineux, circuits
+              d'éclairage et équipements associés.
+            </p>
+          </article>
+
+          <article class="service-box">
+            <div class="icon">🔌</div>
+            <h3>Câblage électrique CFO et CFA</h3>
+            <p>
+              Réalisation du câblage courant fort et courant faible selon
+              l'organisation et les besoins techniques du site.
+            </p>
+          </article>
+
+          <article class="service-box">
+            <div class="icon">🧰</div>
+            <h3>Tableaux et armoires électriques</h3>
+            <p>
+              Montage, installation, raccordement et organisation des tableaux
+              et armoires électriques.
+            </p>
+          </article>
+
+          <article class="service-box">
+            <div class="icon">🔧</div>
+            <h3>Raccordement électrique</h3>
+            <p>
+              Raccordement des circuits, équipements et installations électriques
+              dans le respect des exigences techniques applicables.
+            </p>
+          </article>
+
+          <article class="service-box">
+            <div class="icon">🛠️</div>
+            <h3>Vérification et maintenance</h3>
+            <p>
+              Contrôle, vérification et maintenance des installations afin de
+              contribuer à leur bon fonctionnement.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container two-columns">
+
+        <div>
+          <h2 class="section-title">Des installations adaptées à vos besoins</h2>
+
+          <p>
+            Chaque projet électrique présente des contraintes spécifiques liées
+            au bâtiment, à son activité et aux équipements à installer.
+            BFT prend en compte les besoins du site afin de proposer une solution
+            adaptée aux travaux à réaliser.
+          </p>
+
+          <ul class="check-list">
+            <li>Installation électrique des locaux professionnels</li>
+            <li>Pose et raccordement des prises et points lumineux</li>
+            <li>Câblage courant fort et courant faible</li>
+            <li>Installation de tableaux et armoires électriques</li>
+            <li>Raccordement et organisation des circuits</li>
+            <li>Vérification et maintenance des équipements</li>
+          </ul>
+        </div>
+
+        <div class="info-panel">
+          <h3>Pour quels types de projets ?</h3>
+
+          <p>
+            Nos prestations s'adressent notamment aux :
+          </p>
+
+          <ul class="check-list">
+            <li>Entreprises et locaux professionnels</li>
+            <li>Bâtiments industriels et tertiaires</li>
+            <li>Résidences et immeubles</li>
+            <li>Commerces et espaces commerciaux</li>
+            <li>Chantiers de construction et de rénovation</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">BFT, votre partenaire en installation électrique au Maroc</h2>
+
+        <p class="section-intro">
+          BEST FIBRE TECHNOLOGY intervient dans les projets d'installation et de
+          câblage électrique pour les professionnels. Notre objectif est de fournir
+          des installations organisées, adaptées aux besoins du site et réalisées
+          avec une attention particulière portée au raccordement et à la qualité
+          d'exécution.
+        </p>
+
+        <div class="info-panel">
+          <h3>Une intervention dans tout le Maroc</h3>
+          <p>
+            BFT accompagne les entreprises et les professionnels dans leurs projets
+            d'installation électrique et de câblage sur l'ensemble du territoire marocain,
+            selon la nature et les conditions de chaque chantier.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <h2 class="section-title">Questions fréquentes sur l'installation électrique</h2>
+
+        <div class="faq-list">
+
+          <details>
+            <summary>Quels travaux électriques BFT réalise-t-elle ?</summary>
+            <p>
+              BFT réalise des travaux d'installation électrique, de câblage CFO et CFA,
+              de pose de prises et d'éclairage, de montage et de raccordement de tableaux
+              et d'armoires électriques, ainsi que des opérations de vérification
+              et de maintenance.
+            </p>
+          </details>
+
+          <details>
+            <summary>BFT intervient-elle dans les bâtiments industriels et tertiaires ?</summary>
+            <p>
+              Oui. BFT accompagne les projets électriques des bâtiments industriels,
+              tertiaires et des locaux professionnels, selon les besoins du chantier.
+            </p>
+          </details>
+
+          <details>
+            <summary>BFT intervient-elle partout au Maroc ?</summary>
+            <p>
+              BFT propose ses prestations d'installation et de câblage électrique
+              dans l'ensemble du Maroc, selon la nature et les conditions du projet.
+            </p>
+          </details>
+
+          <details>
+            <summary>Comment demander un devis pour des travaux électriques ?</summary>
+            <p>
+              Vous pouvez contacter BFT via le formulaire de demande de devis
+              disponible sur notre site. Décrivez votre projet et vos besoins
+              afin de faciliter l'étude de votre demande.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Découvrez également nos autres services</h2>
+
+        <div class="related-links">
+          <a href="fibre-optique-ftth-ftto-maroc.html">Installation Fibre Optique FTTH / FTTO</a>
+          <a href="installation-camera-videosurveillance-maroc.html">Installation de Caméras de Vidéosurveillance</a>
+          <a href="installation-systemes-securite-incendie-maroc.html">Systèmes de Sécurité Incendie</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Vous avez un projet d'installation électrique ?</h2>
+
+        <p>
+          Contactez BFT pour discuter de vos besoins en installation électrique,
+          câblage et raccordement.
+        </p>
+
+        <a href="index.html#contact" class="primary-btn">Demander un devis</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>
+      © 2026 BEST FIBRE TECHNOLOGY (BFT) - Tous droits réservés.
+    </p>
+
+    <p>
+      <a href="index.html">Accueil</a> |
+      <a href="index.html#services">Nos services</a> |
+      <a href="index.html#contact">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
